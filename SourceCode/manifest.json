@@ -1,0 +1,33 @@
+{
+    "manifest_version":2,
+    "name":"Calorie Tracker",
+    "version":"1.0.1",
+
+    "icons":{
+        "48":"icon.png"
+    },
+    "description":"This is a simpke calorie tracker application",
+
+    "browser_action":{
+        "default_title":"Calorie Tracker",
+        "default_icon":{
+            "48":"icon.png"
+        },
+        "default_popup":"popup.html"
+    },
+
+    "options_page":"options.html",
+
+    "background":{
+        "scripts":["eventpage.js"],
+        "persistent":false
+    },
+
+    "permissions":[
+        "storage",
+        "notifications",
+        "contextMenus"
+    ],
+
+    "homepage_url":"https://www.linkedin.com/in/zubair-bashir/"
+}

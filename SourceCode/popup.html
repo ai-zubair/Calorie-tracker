@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calorie Tracker</title>
+    <link rel="stylesheet" href="popup.css">
+    <script src="jq.js"></script>
+    <script src="tm.js"></script>
+    <script src="popup.js"></script>
+</head>
+<body>
+    <div id="connection">
+       <p>Uh...Oh! You appear to be Offline!</p> 
+       <svg width="100px" height="100px" viewBox="0 0 100 100">
+           <circle cx="30px" cy="50px" r="10px" fill="black"/>
+           <circle cx="70px" cy="50px" r="10px" fill="black"/>
+           <circle cx="50px" cy="120px" r="40px" fill="none" stroke="black" stroke-width="10px"/>
+       </svg>
+    </div>
+    <h1>CALORIE TRACKER</h1>
+    <div id="stats">
+        <p>Total Count <span id="total">0</span> kCal</p>
+        <p>Goal Count <span id="goal">0</span> kCal</p>
+    </div>
+    <div id="addition">
+        <p>Enter Calorie Amount</p>
+        <p><input type="number" id="enterCalorie" placeholder="In kCal"></p>
+        <p><button id="addCalorie">Add Calories</button></p>
+    </div>
+    <footer>2018&copy;<a href="about.html">Infinity-Creations</a>&reg;</footer>
+</body>
+</html>

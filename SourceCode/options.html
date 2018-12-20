@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Calorie Tracker Options</title>
+    <style>
+        body{
+            font-size: 20px;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+        }
+        #container{
+            margin-top: 200px;
+            height: auto;
+            width: 600px;
+            text-shadow: 2px 2px 6px black;
+            box-shadow: 0px 0px 15px 0px black;
+            margin-bottom: 0px;
+            padding: 20px;
+            padding-bottom: 10px;
+            border-radius: 10px;            
+        }
+        h1{
+            margin-top:0px; 
+            color: rgb(12, 144, 233);
+            text-shadow: 2px 2px 6px black;
+            box-shadow: 0px 0px 15px 0px black;
+            margin-bottom: 0px;
+            border-radius: 10px;
+        }
+        #goalStats{
+            margin-top:15px; 
+            text-shadow: 2px 2px 6px black;
+            box-shadow: 0px 0px 15px 0px black;
+            margin-bottom: 0px;
+            border-radius: 10px;
+            padding-bottom: 10px;
+            padding-top: 4px;
+        }
+        button{
+            margin-top: 6px;
+            font-size: 15px;
+            border-radius: 5px;
+            padding: 5px;
+            color: white;
+            border: none;
+            background-color: rgb(12, 144, 233);
+            box-shadow: 4px 4px 10px 0px #c4c4c4;
+            transition: all 0.5s ease;
+        }
+        input{
+            font-size: 15px;
+            text-align: center;
+            padding: 4px;
+            border:none;
+            border-bottom: 2px solid #c4c4c4;
+            transform-origin: center;
+            transition: all 0.5s ease;
+        }
+        button:focus,input:focus{
+            outline: none;
+        }
+        button:hover{
+            cursor: pointer;
+            box-shadow: none;
+            transform: scale(0.9);
+        }
+        input:focus{
+            border-bottom:2px solid rgb(12, 144, 233);
+        }
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+        footer{
+            font-size: 15px;
+            position: relative;
+            top: 7px;
+            opacity: 0.4;
+        }
+    </style>
+    <script src="jq.js"></script>
+    <script src="options.js"></script>
+</head>
+<body>
+    <div id="container">
+        <h1>CALORIE TRACKER OPTIONS</h1>
+        <div id="goalStats">
+            <p>GOAL</p>
+            <input type="number" placeholder="In kCal" id="goalAmount"></p>
+            <button id="saveGoal">SAVE</button>
+            <button id="resetStats">RESET</button>
+        </div>
+        <footer>2018@Infinity-Creations</footer>
+    </div>
+</body>
+
+</html>

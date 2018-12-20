@@ -1,0 +1,113 @@
+body{
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    padding: 10px;
+    padding-top: 0px;
+    font-size: 20px;
+    width:300px;
+    height: auto;
+    text-align: center;
+    border-bottom:2px solid #c4c4c4;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h1{
+    transform-origin: top;
+    padding-bottom: 5px;
+    border-radius: 10px;
+    color: rgb(12, 144, 233);
+    text-shadow: 2px 2px 6px black;
+    box-shadow: 0px 0px 15px 0px black;
+    margin-bottom: 0px;
+}
+#addition{
+    transform-origin: top;
+    margin-top: 15px;
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 6px;
+}
+#addition p{
+    margin: 0px;
+}
+#stats{
+    transform-origin: top;
+    box-shadow: 0px 0px 15px 0px black;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 6px;
+    margin-top: 15px;    
+}
+footer{
+    font-size: 15px;
+    position: relative;
+    top: 28px;
+    opacity: 0.4;
+}
+#total, #goal{
+    background-color: #c4c4c4;
+    padding: 5px;
+    color: white;
+    font-weight: bolder;
+}
+#goal{
+    margin-left: 2px;
+}
+button{
+    margin-top: 6px;
+    font-size: 15px;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: none;
+    background-color: rgb(12, 144, 233);
+    box-shadow: 4px 4px 10px 0px #c4c4c4;
+    transition: all 0.5s ease;
+}
+input{
+    font-size: 15px;
+    text-align: center;
+    padding: 4px;
+    border:none;
+    border-bottom: 2px solid #c4c4c4;
+    transform-origin: center;
+    transition: all 0.5s ease;
+}
+button:focus,input:focus{
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+    box-shadow: none;
+    transform: scale(0.9);
+}
+input:focus{
+    border-bottom:2px solid rgb(12, 144, 233);
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#connection{
+    background-color: #fff;
+    color: black;
+    font-size: 20px;
+    z-index: 99;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -4%;
+    left: 0%;
+    text-align: center;
+    visibility: hidden;
+    /* box-shadow: 0px 0px 15px 0px black; */
+}
+#connection p{
+    margin-top:36%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
